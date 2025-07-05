@@ -1,0 +1,20 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+  <ribbon>
+    <tabs>
+      <tab id="tabMegaSuite" label="MegaSuite">
+        <group id="grpScen" label="Scenario">
+          <dropDown id="ddlScenario" label="Active" getSelectedItemID="GetScen" onAction="SetScen">
+            <item id="Base" label="Base"/>
+            <item id="Upside" label="Upside"/>
+            <item id="Downside" label="Downside"/>
+            <item id="Stress" label="Stress"/>
+          </dropDown>
+        </group>
+        <group id="grpSOTP" label="SOTP">
+          <button id="btnBuildAdv" label="Re-build Advanced SOTP" onAction="modSOTP_Advanced.BuildAdvancedSOTP"/>
+          <button id="btnFlag" label="Peer Outlier Scan" onAction="modSOTP_Advanced.FlagOutliers"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
